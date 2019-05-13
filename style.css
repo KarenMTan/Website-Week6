@@ -1,0 +1,152 @@
+
+body {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+ul {
+    /* removes bullet points and default browser settings*/
+    background-color: #121212;
+    margin: 0 0 0 -10px;
+    padding: 10px 4px;
+    list-style-type: none; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+}
+
+li {
+    float: left;
+    margin-left: -8px;
+}
+
+li a {
+    color: #f8f8ed; 
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;   
+}
+
+li a:hover, .active {
+    background-color: #c5b100;
+}
+
+section {
+    margin: 50px;
+    display: flex;
+}
+
+.dark-background {
+    background: #121212;
+}
+
+.light-background {
+    background-color: #fffdf1;
+}
+
+#landing {
+    height: 100vh;
+   margin: -70px -8px 0px -8px;
+   padding: 3vw 6vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: #f8f8ed;
+}
+
+#myName
+{
+	font-size: 7vw;
+    margin-bottom: -5px;
+    animation-name: move-right;
+    animation-duration: 1.5s;
+}
+
+@keyframes move-right {
+   0% {
+        margin-left: -150px;
+   }
+   100% {
+        margin-left: 0px;
+   }
+}
+
+#Karen
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    align-self: center;
+	text-align: center;
+	margin-bottom: -30px;
+	-webkit-text-fill-color: #121212;
+	-webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f8f8ed;
+    white-space: nowrap;
+    font-size: 14vw;
+    animation-name: shrink;
+    animation-duration: 1.5s;
+}
+
+@keyframes shrink {
+    0% {
+        font-size: 18vw;
+    }
+    100% {
+        font-size: 14vw;
+    }
+}
+
+#csStudent
+{
+	margin-left: 55%;
+    font-size: 3vw;
+    white-space: nowrap;
+    animation-name: move-left;
+    animation-duration: 1.5s;
+}
+
+@keyframes move-left {
+    0% {
+        margin-left: 85%;
+   }
+    100% {
+        margin-left: 55%;
+   }
+}
+
+#intro {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50px;
+}
+
+#garden {
+    padding: 20px 40px 20px 0;
+    width: 650px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#aboutMe {
+    margin: -20px -10px -13px -10px;
+    padding: 0 30px;
+    flex-direction: column;
+    color: #ffe9e9;
+}
+
+#OC {
+    height: 500px;
+    width: 800px;
+    align-self: center;
+    object-fit: cover;
+}
+
+#education {
+    flex-direction: column;
+}
+
+#footer {
+    font-size: 40px;
+}
